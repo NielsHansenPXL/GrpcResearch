@@ -30,9 +30,9 @@ namespace GrpcServer {
             "Z3JlZXQuSGVsbG9SZXBseUINqgIKR3JwY1NlcnZlcmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.HelloRequest), global::GrpcServer.HelloRequest.Parser, new[]{ "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.HelloReply), global::GrpcServer.HelloReply.Parser, new[]{ "Message" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.HelloRequest), global::GrpcServer.HelloRequest.Parser, new[]{ "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.HelloReply), global::GrpcServer.HelloReply.Parser, new[]{ "Message" }, null, null, null, null)
           }));
     }
     #endregion
