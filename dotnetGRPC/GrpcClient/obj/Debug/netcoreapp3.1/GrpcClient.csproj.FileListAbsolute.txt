@@ -1,0 +1,17 @@
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.exe
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.deps.json
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.runtimeconfig.json
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.runtimeconfig.dev.json
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.dll
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.pdb
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csprojAssemblyReference.cache
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.AssemblyInfoInputs.cache
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.AssemblyInfo.cs
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csproj.CopyComplete
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.dll
+C:\Users\11800963\source\repos\VinceWoutersPXL\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.pdb
