@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer.Protos";
+
+service RemoteArtist{
+	rpc GetArtistInfo(ArtistLookUpModel) returns (ArtistModel);
+}
+
+message ArtistLookUpModel {
+	int32 ArtistId = 1;
+}
+
+message ArtistModel{
+	int32 ArtistId = 1;
+	string Name = 2;
+}

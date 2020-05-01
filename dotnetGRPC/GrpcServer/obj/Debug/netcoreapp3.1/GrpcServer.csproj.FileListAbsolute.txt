@@ -73,7 +73,6 @@ C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\bin\Debug\netcor
 C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.csprojAssemblyReference.cache
 C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\staticwebassets\GrpcServer.StaticWebAssets.Manifest.cache
 C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\staticwebassets\GrpcServer.StaticWebAssets.xml
 C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.MvcApplicationPartsAssemblyInfo.cache
@@ -83,3 +82,4 @@ C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\obj\Debug\netcor
 C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.csproj.CopyComplete
 C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.dll
 C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.pdb
+C:\Users\11800963\source\repos\dotnetGRPC\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.csprojAssemblyReference.cache

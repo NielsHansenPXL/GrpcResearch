@@ -1,0 +1,2 @@
+obj\Debug\netcoreapp3.1/Artists.cs \
+obj\Debug\netcoreapp3.1/ArtistsGrpc.cs: Protos/artists.proto

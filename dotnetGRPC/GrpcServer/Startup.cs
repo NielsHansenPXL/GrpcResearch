@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using GrpcServer.Data;
+using GrpcServer.Models;
+using GrpcServer.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -26,7 +27,7 @@ namespace GrpcServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddGrpc();
-            services.AddDbContext<MvcMusicStoreDBContext>(options =>
+            services.AddDbContext<MvcMusicStoreContext>(options =>
                 options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
         }
 
@@ -42,7 +43,7 @@ namespace GrpcServer
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<GreeterService>();
+                endpoints.MapGrpcService<ArtistService>();
 
                 endpoints.MapGet("/", async context =>
                 {
