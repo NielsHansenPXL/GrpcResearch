@@ -3,7 +3,7 @@ syntax = "proto3";
 option csharp_namespace = "GrpcServer.Protos";
 
 service RemoteArtist{
-	rpc GetArtistInfo(ArtistLookUpModel) returns (ArtistModel);
+	rpc GetArtistInfo (ArtistLookUpModel) returns (ArtistModel);
 }
 
 message ArtistLookUpModel {
