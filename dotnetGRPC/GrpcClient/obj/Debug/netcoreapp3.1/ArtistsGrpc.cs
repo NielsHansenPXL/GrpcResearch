@@ -30,6 +30,27 @@ namespace GrpcServer.Protos {
         __Marshaller_NewArtistsRequest,
         __Marshaller_ArtistModel);
 
+    static readonly grpc::Method<global::GrpcServer.Protos.ArtistModel, global::GrpcServer.Protos.NewArtistsRequest> __Method_InsertArtists = new grpc::Method<global::GrpcServer.Protos.ArtistModel, global::GrpcServer.Protos.NewArtistsRequest>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "InsertArtists",
+        __Marshaller_ArtistModel,
+        __Marshaller_NewArtistsRequest);
+
+    static readonly grpc::Method<global::GrpcServer.Protos.ArtistModel, global::GrpcServer.Protos.NewArtistsRequest> __Method_UpdateArtists = new grpc::Method<global::GrpcServer.Protos.ArtistModel, global::GrpcServer.Protos.NewArtistsRequest>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateArtists",
+        __Marshaller_ArtistModel,
+        __Marshaller_NewArtistsRequest);
+
+    static readonly grpc::Method<global::GrpcServer.Protos.ArtistLookUpModel, global::GrpcServer.Protos.NewArtistsRequest> __Method_DeleteArtists = new grpc::Method<global::GrpcServer.Protos.ArtistLookUpModel, global::GrpcServer.Protos.NewArtistsRequest>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteArtists",
+        __Marshaller_ArtistLookUpModel,
+        __Marshaller_NewArtistsRequest);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -82,6 +103,54 @@ namespace GrpcServer.Protos {
       public virtual grpc::AsyncServerStreamingCall<global::GrpcServer.Protos.ArtistModel> GetNewArtists(global::GrpcServer.Protos.NewArtistsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_GetNewArtists, null, options, request);
+      }
+      public virtual global::GrpcServer.Protos.NewArtistsRequest InsertArtists(global::GrpcServer.Protos.ArtistModel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return InsertArtists(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::GrpcServer.Protos.NewArtistsRequest InsertArtists(global::GrpcServer.Protos.ArtistModel request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_InsertArtists, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::GrpcServer.Protos.NewArtistsRequest> InsertArtistsAsync(global::GrpcServer.Protos.ArtistModel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return InsertArtistsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::GrpcServer.Protos.NewArtistsRequest> InsertArtistsAsync(global::GrpcServer.Protos.ArtistModel request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_InsertArtists, null, options, request);
+      }
+      public virtual global::GrpcServer.Protos.NewArtistsRequest UpdateArtists(global::GrpcServer.Protos.ArtistModel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateArtists(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::GrpcServer.Protos.NewArtistsRequest UpdateArtists(global::GrpcServer.Protos.ArtistModel request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateArtists, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::GrpcServer.Protos.NewArtistsRequest> UpdateArtistsAsync(global::GrpcServer.Protos.ArtistModel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateArtistsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::GrpcServer.Protos.NewArtistsRequest> UpdateArtistsAsync(global::GrpcServer.Protos.ArtistModel request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateArtists, null, options, request);
+      }
+      public virtual global::GrpcServer.Protos.NewArtistsRequest DeleteArtists(global::GrpcServer.Protos.ArtistLookUpModel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteArtists(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::GrpcServer.Protos.NewArtistsRequest DeleteArtists(global::GrpcServer.Protos.ArtistLookUpModel request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteArtists, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::GrpcServer.Protos.NewArtistsRequest> DeleteArtistsAsync(global::GrpcServer.Protos.ArtistLookUpModel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteArtistsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::GrpcServer.Protos.NewArtistsRequest> DeleteArtistsAsync(global::GrpcServer.Protos.ArtistLookUpModel request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteArtists, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override RemoteArtistClient NewInstance(ClientBaseConfiguration configuration)

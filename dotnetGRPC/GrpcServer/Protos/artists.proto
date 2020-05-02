@@ -5,6 +5,9 @@ option csharp_namespace = "GrpcServer.Protos";
 service RemoteArtist{
 	rpc GetArtistInfo(ArtistLookUpModel) returns (ArtistModel);
 	rpc GetNewArtists(NewArtistsRequest) returns (stream ArtistModel);
+	rpc InsertArtists (ArtistModel) returns (NewArtistsRequest);
+	rpc UpdateArtists (ArtistModel) returns (NewArtistsRequest);
+	rpc DeleteArtists (ArtistLookUpModel) returns (NewArtistsRequest);
 }
 
 message NewArtistsRequest{

@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using GrpcServer.Models;
 using GrpcServer.Protos;
 using Microsoft.Extensions.Logging;
+
 
 namespace GrpcServer.Services
 {
@@ -51,6 +53,45 @@ namespace GrpcServer.Services
             {
                 await responseStream.WriteAsync(art);
             }
+        }
+
+        public override Task<NewArtistsRequest> InsertArtists
+        (ArtistModel requestData,
+            ServerCallContext context)
+        {
+            
+            _context.Artist.Add(new Artist()
+            {
+                Name = requestData.Name
+            });
+            _context.SaveChanges();
+            return Task.FromResult(new NewArtistsRequest());
+        }
+
+        public override Task<NewArtistsRequest>
+            DeleteArtists(ArtistLookUpModel requestData,
+                ServerCallContext context)
+        {
+            var data = _context.Artist.Find(requestData.ArtistId);
+            _context.Artist.Remove(new Artist()
+            {
+                ArtistId = data.ArtistId,
+                Name = data.Name,
+            });
+            _context.SaveChanges();
+            return Task.FromResult(new NewArtistsRequest());
+        }
+
+        public override Task<NewArtistsRequest>
+            UpdateArtists(ArtistModel requestData,
+                ServerCallContext context)
+        {
+            _context.Artist.Update(new Artist()
+            {
+                Name = requestData.Name,
+            });
+            _context.SaveChanges();
+            return Task.FromResult(new NewArtistsRequest());
         }
     }
 }
