@@ -12,6 +12,5 @@ namespace GrpcServer.Interfaces
 
         void UpdateArtist(Artist existingArtist);
         void AddArtist(Artist newArtist);
-
     }
 }

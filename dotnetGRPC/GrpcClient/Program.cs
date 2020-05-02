@@ -13,8 +13,8 @@ namespace GrpcClient
     {
         static async Task Main(string[] args)
         {
-            //BenchmarkRunner.Run<Benchmark>();
-            //Console.ReadKey();
+            // BenchmarkRunner.Run<Benchmark>();
+            // Console.ReadKey();
 
             {
                 AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
@@ -65,11 +65,7 @@ namespace GrpcClient
                 Console.WriteLine();
 
 
-
-
-
             }
         }
     }
-
 }

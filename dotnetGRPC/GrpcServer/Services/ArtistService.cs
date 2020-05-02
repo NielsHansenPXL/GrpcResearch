@@ -15,12 +15,11 @@ namespace GrpcServer.Services
     {
         private readonly ILogger<ArtistService> _logger;
         private readonly MvcMusicStoreContext _context;
-        private readonly ArtistRepository rep;
+
         public ArtistService(ILogger<ArtistService> logger, MvcMusicStoreContext context)
         {
             _logger = logger;
             _context = context;
-            rep = new ArtistRepository(context);
         }
 
         public override Task<ArtistModel> GetArtistInfo(ArtistLookUpModel request, ServerCallContext context)
@@ -33,13 +32,15 @@ namespace GrpcServer.Services
                 output.ArtistId = artist.ArtistId;
                 output.Name = artist.Name;
             }
+
             return Task.FromResult(output);
         }
 
-        public override async Task GetNewArtists(NewArtistsRequest request, IServerStreamWriter<ArtistModel> responseStream, ServerCallContext context)
+        public override async Task GetNewArtists(NewArtistsRequest request,
+            IServerStreamWriter<ArtistModel> responseStream, ServerCallContext context)
         {
             IList<ArtistModel> artists = new List<ArtistModel>();
-            foreach(Artist artist in rep.GetAllArtists())
+            foreach (Artist artist in _context.Artist.ToList())
             {
                 var artistModel = new ArtistModel
                 {
@@ -49,7 +50,7 @@ namespace GrpcServer.Services
                 artists.Add(artistModel);
             }
 
-            foreach(var art in artists)
+            foreach (var art in artists)
             {
                 await responseStream.WriteAsync(art);
             }
@@ -59,7 +60,6 @@ namespace GrpcServer.Services
         (ArtistModel requestData,
             ServerCallContext context)
         {
-            
             _context.Artist.Add(new Artist()
             {
                 Name = requestData.Name

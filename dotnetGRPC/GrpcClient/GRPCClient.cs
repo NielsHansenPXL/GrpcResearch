@@ -19,6 +19,7 @@ namespace GrpcClient
             channel = GrpcChannel.ForAddress("http://localhost:5000");
             client = new RemoteArtist.RemoteArtistClient(channel);
         }
+
         public async Task<List<ArtistModel>> StreamResultAsync()
         {
             List<ArtistModel> artistModels = new List<ArtistModel>();
@@ -29,7 +30,9 @@ namespace GrpcClient
                     var currentArtist = call.ResponseStream.Current;
                     artistModels.Add(currentArtist);
                 }
-            };
+            }
+
+            ;
             return artistModels;
         }
     }

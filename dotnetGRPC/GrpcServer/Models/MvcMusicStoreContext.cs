@@ -26,7 +26,8 @@ namespace GrpcServer.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MvcMusicStore;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer(
+                    "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MvcMusicStore;Trusted_Connection=True;");
             }
         }
 

@@ -1,10 +1,5 @@
-﻿using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Validators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using BenchmarkApp;
+using BenchmarkDotNet.Attributes;
 using System.Threading.Tasks;
 
 namespace GrpcClient
@@ -12,12 +7,12 @@ namespace GrpcClient
     [MemoryDiagnoser]
     public class Benchmark
     {
-        [Params(100, 200)]
-        public int Amount;
-        public readonly GRPCClient grpcClient = new GRPCClient();
+        [Params(100, 200, 300)] public int Amount;
+        public GRPCClient grpcClient = new GRPCClient();
+        public RESTClient restClient = new RESTClient();
 
         [Benchmark]
-        public async Task GrpcTest()
+        public async Task GrpcStreamBenchmark()
         {
             for (int i = 0; i < Amount; i++)
             {

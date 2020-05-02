@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hOF2vdU3x3Xzn23DHii1UwR5S2GQ7X7JQXg65kKy9QKCtNP0fU1lnxBmUKbSE4EWPxd+cwBZzbzuM55MNGp3TQ==",
+  "dgSpecHash": "nEJhRmCYuLY7hlMQBEqsZI0ZcyoSzgM9MJ+wlJd/l8TLMTncHF2+7lN+WqlM2Ypdv7opyEFD+cXE5kAe9U+bnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vince\\source\\repos\\NielsHansenPXL\\GrpcResearch\\dotnetGRPC\\GrpcClient\\GrpcClient.csproj",
+  "projectFilePath": "C:\\Users\\vince\\Source\\Repos\\NielsHansenPXL\\GrpcResearch\\dotnetGRPC\\GrpcClient\\BenchmarkApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vince\\.nuget\\packages\\benchmarkdotnet\\0.12.1\\benchmarkdotnet.0.12.1.nupkg.sha512",
     "C:\\Users\\vince\\.nuget\\packages\\benchmarkdotnet.annotations\\0.12.1\\benchmarkdotnet.annotations.0.12.1.nupkg.sha512",

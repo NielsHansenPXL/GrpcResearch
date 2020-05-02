@@ -20,10 +20,12 @@ namespace GrpcServer
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 
         private IConfiguration _configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             _configuration = configuration;
         }
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddGrpc();
@@ -45,10 +47,12 @@ namespace GrpcServer
             {
                 endpoints.MapGrpcService<ArtistService>();
 
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
-                });
+                endpoints.MapGet("/",
+                    async context =>
+                    {
+                        await context.Response.WriteAsync(
+                            "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
+                    });
             });
         }
     }
