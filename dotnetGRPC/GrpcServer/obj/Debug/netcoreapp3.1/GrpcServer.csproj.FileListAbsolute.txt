@@ -132,7 +132,6 @@ C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\bi
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.csprojAssemblyReference.cache
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.csproj.CoreCompileInputs.cache
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.AssemblyInfoInputs.cache

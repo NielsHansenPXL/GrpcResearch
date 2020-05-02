@@ -24,14 +24,17 @@ namespace GrpcServer.Protos {
     static ArtistsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRQcm90b3MvYXJ0aXN0cy5wcm90byIlChFBcnRpc3RMb29rVXBNb2RlbBIQ",
-            "CghBcnRpc3RJZBgBIAEoBSItCgtBcnRpc3RNb2RlbBIQCghBcnRpc3RJZBgB",
-            "IAEoBRIMCgROYW1lGAIgASgJMkEKDFJlbW90ZUFydGlzdBIxCg1HZXRBcnRp",
-            "c3RJbmZvEhIuQXJ0aXN0TG9va1VwTW9kZWwaDC5BcnRpc3RNb2RlbEIUqgIR",
-            "R3JwY1NlcnZlci5Qcm90b3NiBnByb3RvMw=="));
+            "ChRQcm90b3MvYXJ0aXN0cy5wcm90byITChFOZXdBcnRpc3RzUmVxdWVzdCIl",
+            "ChFBcnRpc3RMb29rVXBNb2RlbBIQCghBcnRpc3RJZBgBIAEoBSItCgtBcnRp",
+            "c3RNb2RlbBIQCghBcnRpc3RJZBgBIAEoBRIMCgROYW1lGAIgASgJMnYKDFJl",
+            "bW90ZUFydGlzdBIxCg1HZXRBcnRpc3RJbmZvEhIuQXJ0aXN0TG9va1VwTW9k",
+            "ZWwaDC5BcnRpc3RNb2RlbBIzCg1HZXROZXdBcnRpc3RzEhIuTmV3QXJ0aXN0",
+            "c1JlcXVlc3QaDC5BcnRpc3RNb2RlbDABQhSqAhFHcnBjU2VydmVyLlByb3Rv",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.Protos.NewArtistsRequest), global::GrpcServer.Protos.NewArtistsRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.Protos.ArtistLookUpModel), global::GrpcServer.Protos.ArtistLookUpModel.Parser, new[]{ "ArtistId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.Protos.ArtistModel), global::GrpcServer.Protos.ArtistModel.Parser, new[]{ "ArtistId", "Name" }, null, null, null, null)
           }));
@@ -40,6 +43,107 @@ namespace GrpcServer.Protos {
 
   }
   #region Messages
+  public sealed partial class NewArtistsRequest : pb::IMessage<NewArtistsRequest> {
+    private static readonly pb::MessageParser<NewArtistsRequest> _parser = new pb::MessageParser<NewArtistsRequest>(() => new NewArtistsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<NewArtistsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GrpcServer.Protos.ArtistsReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NewArtistsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NewArtistsRequest(NewArtistsRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NewArtistsRequest Clone() {
+      return new NewArtistsRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as NewArtistsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(NewArtistsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(NewArtistsRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
   public sealed partial class ArtistLookUpModel : pb::IMessage<ArtistLookUpModel> {
     private static readonly pb::MessageParser<ArtistLookUpModel> _parser = new pb::MessageParser<ArtistLookUpModel>(() => new ArtistLookUpModel());
     private pb::UnknownFieldSet _unknownFields;
@@ -48,7 +152,7 @@ namespace GrpcServer.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcServer.Protos.ArtistsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::GrpcServer.Protos.ArtistsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -177,7 +281,7 @@ namespace GrpcServer.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcServer.Protos.ArtistsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::GrpcServer.Protos.ArtistsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

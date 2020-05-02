@@ -42,7 +42,6 @@ C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\bi
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csprojAssemblyReference.cache
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csproj.CoreCompileInputs.cache
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.AssemblyInfoInputs.cache
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.AssemblyInfo.cs

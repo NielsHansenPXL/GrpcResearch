@@ -14,12 +14,20 @@ namespace GrpcServer.Protos {
 
     static readonly grpc::Marshaller<global::GrpcServer.Protos.ArtistLookUpModel> __Marshaller_ArtistLookUpModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcServer.Protos.ArtistLookUpModel.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::GrpcServer.Protos.ArtistModel> __Marshaller_ArtistModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcServer.Protos.ArtistModel.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::GrpcServer.Protos.NewArtistsRequest> __Marshaller_NewArtistsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcServer.Protos.NewArtistsRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::GrpcServer.Protos.ArtistLookUpModel, global::GrpcServer.Protos.ArtistModel> __Method_GetArtistInfo = new grpc::Method<global::GrpcServer.Protos.ArtistLookUpModel, global::GrpcServer.Protos.ArtistModel>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetArtistInfo",
         __Marshaller_ArtistLookUpModel,
+        __Marshaller_ArtistModel);
+
+    static readonly grpc::Method<global::GrpcServer.Protos.NewArtistsRequest, global::GrpcServer.Protos.ArtistModel> __Method_GetNewArtists = new grpc::Method<global::GrpcServer.Protos.NewArtistsRequest, global::GrpcServer.Protos.ArtistModel>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetNewArtists",
+        __Marshaller_NewArtistsRequest,
         __Marshaller_ArtistModel);
 
     /// <summary>Service descriptor</summary>
@@ -66,6 +74,14 @@ namespace GrpcServer.Protos {
       public virtual grpc::AsyncUnaryCall<global::GrpcServer.Protos.ArtistModel> GetArtistInfoAsync(global::GrpcServer.Protos.ArtistLookUpModel request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetArtistInfo, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::GrpcServer.Protos.ArtistModel> GetNewArtists(global::GrpcServer.Protos.NewArtistsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetNewArtists(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::GrpcServer.Protos.ArtistModel> GetNewArtists(global::GrpcServer.Protos.NewArtistsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_GetNewArtists, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override RemoteArtistClient NewInstance(ClientBaseConfiguration configuration)

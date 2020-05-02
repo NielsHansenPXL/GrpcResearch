@@ -14,12 +14,20 @@ namespace GrpcServer.Protos {
 
     static readonly grpc::Marshaller<global::GrpcServer.Protos.ArtistLookUpModel> __Marshaller_ArtistLookUpModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcServer.Protos.ArtistLookUpModel.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::GrpcServer.Protos.ArtistModel> __Marshaller_ArtistModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcServer.Protos.ArtistModel.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::GrpcServer.Protos.NewArtistsRequest> __Marshaller_NewArtistsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcServer.Protos.NewArtistsRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::GrpcServer.Protos.ArtistLookUpModel, global::GrpcServer.Protos.ArtistModel> __Method_GetArtistInfo = new grpc::Method<global::GrpcServer.Protos.ArtistLookUpModel, global::GrpcServer.Protos.ArtistModel>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetArtistInfo",
         __Marshaller_ArtistLookUpModel,
+        __Marshaller_ArtistModel);
+
+    static readonly grpc::Method<global::GrpcServer.Protos.NewArtistsRequest, global::GrpcServer.Protos.ArtistModel> __Method_GetNewArtists = new grpc::Method<global::GrpcServer.Protos.NewArtistsRequest, global::GrpcServer.Protos.ArtistModel>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetNewArtists",
+        __Marshaller_NewArtistsRequest,
         __Marshaller_ArtistModel);
 
     /// <summary>Service descriptor</summary>
@@ -37,6 +45,11 @@ namespace GrpcServer.Protos {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task GetNewArtists(global::GrpcServer.Protos.NewArtistsRequest request, grpc::IServerStreamWriter<global::GrpcServer.Protos.ArtistModel> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -44,7 +57,8 @@ namespace GrpcServer.Protos {
     public static grpc::ServerServiceDefinition BindService(RemoteArtistBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetArtistInfo, serviceImpl.GetArtistInfo).Build();
+          .AddMethod(__Method_GetArtistInfo, serviceImpl.GetArtistInfo)
+          .AddMethod(__Method_GetNewArtists, serviceImpl.GetNewArtists).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -54,6 +68,7 @@ namespace GrpcServer.Protos {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, RemoteArtistBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetArtistInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcServer.Protos.ArtistLookUpModel, global::GrpcServer.Protos.ArtistModel>(serviceImpl.GetArtistInfo));
+      serviceBinder.AddMethod(__Method_GetNewArtists, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::GrpcServer.Protos.NewArtistsRequest, global::GrpcServer.Protos.ArtistModel>(serviceImpl.GetNewArtists));
     }
 
   }
