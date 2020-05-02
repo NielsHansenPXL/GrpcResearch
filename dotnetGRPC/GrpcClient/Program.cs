@@ -12,7 +12,7 @@ namespace GrpcClient
         static async Task Main(string[] args)
         {
             AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
-            var channel = GrpcChannel.ForAddress("https://localhost:8081");
+            var channel = GrpcChannel.ForAddress("https://localhost:8082");
             var artistClient = new RemoteArtist.RemoteArtistClient(channel);
 
             var artistInput = new ArtistLookUpModel() { ArtistId = 22 };

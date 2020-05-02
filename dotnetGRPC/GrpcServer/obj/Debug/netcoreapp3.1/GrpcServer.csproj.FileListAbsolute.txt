@@ -143,3 +143,4 @@ C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\ob
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.dll
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.pdb
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.genruntimeconfig.cache
+C:\Users\vince\source\repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.csprojAssemblyReference.cache

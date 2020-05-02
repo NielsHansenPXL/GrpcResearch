@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "+0Z0bSN6pVg6Nq9OQ+1CCqMtPx/F9H8h6573tqaMKGbs+VpuCg2hiLMUiob07FK/QZE3yixA6X78tRhf4qD+xA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vince\\source\\repos\\NielsHansenPXL\\GrpcResearch\\dotnetGRPC\\GrpcClient\\GrpcClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vince\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
+    "C:\\Users\\vince\\.nuget\\packages\\grpc.core.api\\2.27.0\\grpc.core.api.2.27.0.nupkg.sha512",
+    "C:\\Users\\vince\\.nuget\\packages\\grpc.net.client\\2.28.0\\grpc.net.client.2.28.0.nupkg.sha512",
+    "C:\\Users\\vince\\.nuget\\packages\\grpc.net.common\\2.28.0\\grpc.net.common.2.28.0.nupkg.sha512",
+    "C:\\Users\\vince\\.nuget\\packages\\grpc.tools\\2.28.1\\grpc.tools.2.28.1.nupkg.sha512",
+    "C:\\Users\\vince\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Users\\vince\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
+    "C:\\Users\\vince\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

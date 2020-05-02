@@ -49,3 +49,4 @@ C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\ob
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.dll
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.pdb
 C:\Users\vince\Source\Repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.genruntimeconfig.cache
+C:\Users\vince\source\repos\NielsHansenPXL\GrpcResearch\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csprojAssemblyReference.cache
