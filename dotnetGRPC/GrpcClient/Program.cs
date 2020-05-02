@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
 using Grpc.Core;
 using Grpc.Net.Client;
 using GrpcServer;
@@ -9,25 +11,11 @@ namespace GrpcClient
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
-            AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
-            var channel = GrpcChannel.ForAddress("https://localhost:8082");
-            var artistClient = new RemoteArtist.RemoteArtistClient(channel);
-
-            var artistInput = new ArtistLookUpModel() { ArtistId = 22 };
-            var artistReply = await artistClient.GetArtistInfoAsync(artistInput);
-            Console.WriteLine($"{artistReply.Name}");
-
-            using (var call = artistClient.GetNewArtists(new NewArtistsRequest()))
-            {
-                while (await call.ResponseStream.MoveNext())
-                {
-                    var currentArtist = call.ResponseStream.Current;
-                    Console.WriteLine($"{currentArtist.Name}");
-                }
-            }
-            Console.ReadLine();
+            BenchmarkRunner.Run<Benchmark>();
+            Console.ReadKey();
         }
     }
+
 }

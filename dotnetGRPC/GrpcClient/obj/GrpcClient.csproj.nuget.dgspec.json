@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "BenchmarkDotNet": {
+              "target": "Package",
+              "version": "[0.12.1, )"
+            },
             "Google.Protobuf": {
               "target": "Package",
               "version": "[3.11.4, )"

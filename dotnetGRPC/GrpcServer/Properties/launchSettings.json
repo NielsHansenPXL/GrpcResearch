@@ -3,7 +3,7 @@
     "GrpcServer": {
       "commandName": "Project",
       "launchBrowser": false,
-      "applicationUrl": "https://localhost:8082",
+      "applicationUrl": "https://localhost:8083",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
