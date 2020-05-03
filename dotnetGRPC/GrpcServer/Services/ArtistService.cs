@@ -88,7 +88,8 @@ namespace GrpcServer.Services
         {
             _context.Artist.Update(new Artist()
             {
-                Name = requestData.Name,
+                ArtistId = requestData.ArtistId,
+                Name = requestData.Name
             });
             _context.SaveChanges();
             return Task.FromResult(new NewArtistsRequest());

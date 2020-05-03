@@ -20,6 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GrpcServer\GrpcServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Protobuf Include="Protos\artists.proto" GrpcServices="Client" />
   </ItemGroup>
 

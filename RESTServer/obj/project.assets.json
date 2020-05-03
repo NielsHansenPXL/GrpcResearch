@@ -8,19 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\vince\\.nuget\\packages\\": {}
+    "C:\\Users\\11800963\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vince\\Source\\Repos\\NielsHansenPXL\\GrpcResearch\\RESTServer\\RESTServer.csproj",
+      "projectUniqueName": "C:\\Users\\11800963\\Source\\Repos\\GrpcResearch\\RESTServer\\RESTServer.csproj",
       "projectName": "RESTServer",
-      "projectPath": "C:\\Users\\vince\\Source\\Repos\\NielsHansenPXL\\GrpcResearch\\RESTServer\\RESTServer.csproj",
-      "packagesPath": "C:\\Users\\vince\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vince\\Source\\Repos\\NielsHansenPXL\\GrpcResearch\\RESTServer\\obj\\",
+      "projectPath": "C:\\Users\\11800963\\Source\\Repos\\GrpcResearch\\RESTServer\\RESTServer.csproj",
+      "packagesPath": "C:\\Users\\11800963\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\11800963\\Source\\Repos\\GrpcResearch\\RESTServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\vince\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\11800963\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

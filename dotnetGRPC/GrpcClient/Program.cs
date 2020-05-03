@@ -5,6 +5,7 @@ using BenchmarkDotNet.Running;
 using Grpc.Core;
 using Grpc.Net.Client;
 using GrpcServer;
+using GrpcServer.Models;
 using GrpcServer.Protos;
 
 namespace GrpcClient
@@ -39,11 +40,15 @@ namespace GrpcClient
                 Console.WriteLine();
 
                 //Update
-                var modifiedArtist = new ArtistModel()
+
+                var modifiedArtist = await artistClient.GetArtistInfoAsync(new ArtistLookUpModel()
                 {
-                    ArtistId = 279,
-                    Name = "Eric Prydz"
-                };
+                    ArtistId = 278
+                });
+
+
+                modifiedArtist.Name = "Donna Summer";
+
                 var response2 = await artistClient.UpdateArtistsAsync(modifiedArtist);
 
                 Console.WriteLine($"{modifiedArtist.Name} with Id {modifiedArtist.ArtistId} modified succesfully");
@@ -63,6 +68,8 @@ namespace GrpcClient
                 Console.ReadLine();
 
                 Console.WriteLine();
+
+                //Delete
 
 
             }
