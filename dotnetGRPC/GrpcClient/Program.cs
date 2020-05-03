@@ -28,16 +28,19 @@ namespace GrpcClient
 
                 Console.WriteLine();
 
+
                 //Create
                 var newArtist = new ArtistModel()
                 {
-                    Name = "Deadmau5"
+                    Name = "Eric Prydz"
                 };
                 var response1 = await artistClient.InsertArtistsAsync(newArtist);
 
                 Console.WriteLine($"{newArtist.Name} added succesfully");
 
                 Console.WriteLine();
+
+
 
                 //Update
 
@@ -47,13 +50,26 @@ namespace GrpcClient
                 });
 
 
-                modifiedArtist.Name = "Donna Summer";
+                modifiedArtist.Name = "Donna Summer"; // Change this name and reverse it later
 
                 var response2 = await artistClient.UpdateArtistsAsync(modifiedArtist);
 
                 Console.WriteLine($"{modifiedArtist.Name} with Id {modifiedArtist.ArtistId} modified succesfully");
 
                 Console.WriteLine();
+
+
+
+                //Delete --> Take care of the db and ensure you have a right ArtistId
+
+                var response3 = await artistClient.DeleteArtistsAsync(new ArtistLookUpModel()
+                {
+                    ArtistId = 296
+                });
+
+                Console.WriteLine("Artist deleted");
+
+
 
 
                 //Read
@@ -68,9 +84,6 @@ namespace GrpcClient
                 Console.ReadLine();
 
                 Console.WriteLine();
-
-                //Delete
-
 
             }
         }

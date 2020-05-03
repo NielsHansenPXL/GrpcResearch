@@ -73,11 +73,7 @@ namespace GrpcServer.Services
                 ServerCallContext context)
         {
             var data = _context.Artist.Find(requestData.ArtistId);
-            _context.Artist.Remove(new Artist()
-            {
-                ArtistId = data.ArtistId,
-                Name = data.Name,
-            });
+            _context.Artist.Remove(data);
             _context.SaveChanges();
             return Task.FromResult(new NewArtistsRequest());
         }
