@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using GrpcServer.Models;
+using MvcMusicStore_library.Models;
 using GrpcServer.Protos;
 using Microsoft.Extensions.Logging;
 
@@ -68,6 +68,7 @@ namespace GrpcServer.Services
             return Task.FromResult(new NewArtistsRequest());
         }
 
+        /*
         public override Task<NewArtistsRequest>
             DeleteArtists(ArtistLookUpModel requestData,
                 ServerCallContext context)
@@ -76,7 +77,7 @@ namespace GrpcServer.Services
             _context.Artist.Remove(data);
             _context.SaveChanges();
             return Task.FromResult(new NewArtistsRequest());
-        }
+        } */
 
         public override Task<NewArtistsRequest>
             UpdateArtists(ArtistModel requestData,

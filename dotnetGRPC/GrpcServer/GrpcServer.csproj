@@ -34,4 +34,8 @@
     <Folder Include="Data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\researchProject_moveDB\BenchmarkApp\MvcMusicStore_library\MvcMusicStore_library.csproj" />
+  </ItemGroup>
+
 </Project>

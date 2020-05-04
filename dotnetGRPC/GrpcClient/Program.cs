@@ -61,14 +61,14 @@ namespace GrpcClient
 
 
                 //Delete --> Take care of the db and ensure you have a right ArtistId
-
+                /*
                 var response3 = await artistClient.DeleteArtistsAsync(new ArtistLookUpModel()
                 {
                     ArtistId = 296
                 });
 
                 Console.WriteLine("Artist deleted");
-
+                */
 
 
 

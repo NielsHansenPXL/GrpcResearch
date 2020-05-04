@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\11800963\\Source\\Repos\\GrpcResearch\\RESTServer\\RESTServer.csproj",
+      "projectUniqueName": "C:\\Users\\11800963\\Source\\Repos\\GrpcResearch_Library_test\\RESTServer\\RESTServer.csproj",
       "projectName": "RESTServer",
-      "projectPath": "C:\\Users\\11800963\\Source\\Repos\\GrpcResearch\\RESTServer\\RESTServer.csproj",
+      "projectPath": "C:\\Users\\11800963\\Source\\Repos\\GrpcResearch_Library_test\\RESTServer\\RESTServer.csproj",
       "packagesPath": "C:\\Users\\11800963\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\11800963\\Source\\Repos\\GrpcResearch\\RESTServer\\obj\\",
+      "outputPath": "C:\\Users\\11800963\\Source\\Repos\\GrpcResearch_Library_test\\RESTServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

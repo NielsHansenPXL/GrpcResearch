@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GrpcServer.Interfaces;
-using GrpcServer.Models;
+using MvcMusicStore_library.Models;
 
 namespace GrpcServer
 {
