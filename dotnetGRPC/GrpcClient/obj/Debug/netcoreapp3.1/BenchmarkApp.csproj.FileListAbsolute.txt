@@ -280,3 +280,6 @@ C:\Users\11800963\Source\Repos\GrpcResearch_Library_test\dotnetGRPC\GrpcClient\o
 C:\Users\11800963\Source\Repos\GrpcResearch_Library_test\dotnetGRPC\GrpcClient\obj\Debug\netcoreapp3.1\BenchmarkApp.pdb
 C:\Users\11800963\Source\Repos\GrpcResearch_Library_test\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\MvcMusicStore_library.dll
 C:\Users\11800963\Source\Repos\GrpcResearch_Library_test\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\MvcMusicStore_library.pdb
+C:\Users\11800963\Source\Repos\GrpcResearch_Library_test\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\11800963\Source\Repos\GrpcResearch_Library_test\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\11800963\Source\Repos\GrpcResearch_Library_test\dotnetGRPC\GrpcClient\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

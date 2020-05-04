@@ -62,6 +62,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.28.1, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
             }
           },
           "imports": [
